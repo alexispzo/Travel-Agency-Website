@@ -9,4 +9,5 @@ Features:
 - Booking System: Users can book trips and receive confirmation.
 - Footer Section: Quick access to important links like social media (Twitter, Facebook, Instagram), contact information, and FAQ.
 
+
 Authors: BALLAND Alexis / FERRY Alexandre
