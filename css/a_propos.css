@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Gabarito:wght@500&family=Gloria+Hallelujah&display=swap');
+
+
+#propos{
+    min-height: 72vh;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+p{
+    color: black;
+    text-align: center;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.content{
+    font-family: 'Gabarito', sans-serif;
+}
+
+.content h2{
+    text-align: center;
+}
+
+

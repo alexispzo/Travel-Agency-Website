@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Gabarito:wght@500&family=Gloria+Hallelujah&display=swap');
+
+
+.tete {
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content:  space-between;
+    background: rgb(241, 237, 237);
+    z-index: 1;
+    padding-left: 1%;
+
+}
+
+.navigation a {
+
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+    font-size: 25px ;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a:hover {
+    color: yellowgreen;
+}
+
+  
+.logo {
+    height: 100px;
+    width: 100x;
+}

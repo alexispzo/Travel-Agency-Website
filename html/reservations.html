@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Réservez votre voyage</title>
+        <link rel="icon" href="../images/icon_21pilots.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/reservation.css">
+    </head>
+    <body>
+        <div id="headerContainer"></div>
+        <section class="page">
+        <div class="wrapper">
+            <template id="template">
+                <div class="container">
+                    <h2>{{nom}}</h2>
+                    <div class="image">
+                        <img src="../images/voyage.jpg" alt="">
+                        <img src="../images/location.png" alt="">
+                        <img src="../images/voyage_60.jpg" alt="">
+                    </div>              
+                <div class="description">
+                            <p >{{descr}} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec metus vitae nulla fringilla condimentum. Nulla facilisi. Sed volutpat, odio nec eleifend hendrerit, purus libero laoreet arcu, eu bibendum lectus libero in justo. Integer efficitur mi a enim rhoncus, vel dictum velit luctus. Sed tincidunt, sapien vel interdum sollicitudin, justo orci varius justo, ac blandit justo neque nec urna. Duis lacinia elit nec ligula interdum, in consequat justo dapibus. In hac habitasse platea dictumst. Aliquam quis mauris justo. Sed euismod, nulla at. </p>
+                </div>
+            </template>
+        </div>
+        <section id="reservation">
+            <div class="conteneur">
+                <div class="form">
+                    <h3>Vos options</h3>
+                    <form id="form" action="../html/mon_panier.html">
+                        <div class="separation">
+                            <div class="gauche">
+                                    <label class="back" for="arrivee">Date d'arrivee : </label>                      
+                                    <input type="date" id="date-arrivee" name="date-arrivee"  min="" max="2025-12-31"  required>
+                                    <input type="number" id="nombre-adultes" name="nombre-adultes" min="1" placeholder="Nombre d'adultes" required >
+                                    <div class="separationPetitDejeuner">
+                                        <label for="petitDejeuner">Petit Déjeuner :</label>
+                                        <input type="checkbox" id="petitDejeuner">
+                                    </div>
+                            </div>
+                            <div class="droite">    
+                                    <label class="back" for="retour">Date de retour : </label> 
+                                    <input type="date" id="date-retour" name="date-retour" min="" max="2025-12-31" required>
+                                    <input type="number" id="nombre-enfants" name="nombre-enfants" min="0"  placeholder="Nombre d'enfants" required>
+                                    <div id="reinitialiser">
+                                        <div class="prix"><p>Prix : 0 €</p></div>
+                                        <div class="rei"><button type="reset" class="bouttonReinitialiser" >Réinitialiser</div>
+                                    </div>
+                            </div>
+                        </div>
+                        <button class="submit-button" type="submit">Reserver</button>
+                    </form>
+                </div>
+                <div class="formImage">
+                    <img src="../images/greece1.avif" alt="">
+                </div>
+            </div>
+        </section>
+        <div id="footerContainer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../javascript/footer_header.js"></script>
+    <script src="../javascript/reservation.js"></script>
+    </body>
+</html>

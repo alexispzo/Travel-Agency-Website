@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Gabarito:wght@500&family=Gloria+Hallelujah&display=swap');
+
+
+.container {
+  display: grid;
+  font-family: 'Gabarito', sans-serif;
+  width: 40%;
+  background-color: rgb(241, 237, 237);
+  padding : 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+  margin-left: 30%;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-group input[type="submit"] {
+  margin-left: 34%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+.form-group input[type="submit"]:hover {
+  background-color: rgb(17, 13, 13);
+}

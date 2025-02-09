@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   
+    <head>
+      <meta charset="UTF-8"/>
+      <title>21 Pilots</title>
+      <link rel="icon" href="../images/icon_21pilots.png" type="image/x-icon">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/header.css">
+      <link rel="stylesheet" href="../css/footer.css">
+    </head> 
+    
+    <body>
+        <div id="headerContainer"></div>
+        <section class="presentation">
+            <h1>Bienvenue chez 21 Pilots</h1>
+            <p>Bienvenue chez 21 Pilots, votre passeport vers des aventures inoubliables
+                 et des destinations extraordinaires. Nous sommes bien plus qu'une simple compagnie de voyage - nous sommes vos partenaires passionnés dans la découverte du monde.  Chez 21 Pilots, nous comprenons que chaque voyage est une histoire unique en son genre, et c'est pourquoi nous nous efforçons de rendre chaque moment de votre voyage aussi exceptionnel que possible.</p>
+        </section>
+
+        <h3 class="titre">Nos destinations</h3>
+        <div class="filtre">
+           <div class="prixMin">
+                <label for="filtrePrixMin">Prix moyen minimum :</label>
+                <input oninput="filtrer()"  type="number" id="filtrePrixMin" min="0" step="100">
+                <label for="filtrePrixMin">€</label>
+            </div>
+            <div class="prixMax">
+                <label for="filtrePrixMax">Prix moyen maximum :</label>
+                <input oninput="filtrer()"  type="number" id="filtrePrixMax" min="0" step="100">
+                <label for="filtrePrixMax">€</label>
+            </div>
+            <div class="checkbox">
+                <label for="filtreAnimaux">Animaux autorisés :</label>
+                <input oninput="filtrer()" type="checkbox" id="filtreAnimaux">
+            </div>
+            <div class="checkbox">
+                <label for="filtreDejeuner">Petit Déjeuner inclus :</label>
+                <input oninput="filtrer()" type="checkbox" id="filtreDejeuner">
+            </div>
+        </div>
+        </div>
+        <section class="pays">
+            <template id="template">
+                <div class="container">
+                        <a href="{{lien}}">
+                            <img src="../images/greece1.avif" alt="" title="">
+                            <div class="description">
+                                <h2>{{nom}}</h2>
+                                <p class="prix">{{description}}</p>
+                                <p class="temperature">Température actuelle : {{temperature}}</p>
+                            </div>
+                        </a>
+                </div> 
+            </template>
+        </section>
+        <div id="footerContainer"></div> 
+    <script src="../javascript/credential.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../javascript/footer_header.js"></script>
+    <script src="../javascript/index.js"></script>
+    </body>   
+</html>
